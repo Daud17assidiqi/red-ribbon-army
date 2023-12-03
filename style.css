@@ -8,9 +8,22 @@
 .jumbotron {
   background-image: url(img/jumbotron-bg.jpg);
   background-size: cover;
-  height: 640px;
+  height: 540px;
+  text-align: center;
 }
 
+.jumbotron .display-4 {
+  color: white;
+  margin-top: 150px;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span {
+  font-weight: 500;
+}
 /* utility */
 .tombol {
   text-transform: uppercase;
@@ -19,6 +32,12 @@
 
 /* DESKTOP VERSION */
 @media (min-width: 992px) {
+  .navbar-brand,
+  .nav-link {
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+
   .nav-link {
     text-transform: uppercase;
     margin-right: 30px;
@@ -32,5 +51,13 @@
     margin: auto;
     padding-bottom: 5px;
     margin-bottom: -8px;
+  }
+
+  .jumbotron {
+    margin-top: -75px;
+    height: 640px;
+  }
+  .jumbotron .display-4 {
+    font-size: 62px;
   }
 }
